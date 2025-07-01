@@ -8397,7 +8397,7 @@ h1, h2, h3, h4, h5,
 .owl-carousel {
   position: relative; }
   .owl-carousel .owl-item {
-    touch-action: auto;
+    touch-action: auto !important;
     opacity: .4; }
     .owl-carousel .owl-item.active {
       opacity: 1; }
@@ -9003,7 +9003,7 @@ h1, h2, h3, h4, h5,
       font-weight: 600; }
     @media (max-width: 767.98px) {
       .project .text {
-        opacity: 1; }
+        opacity: 0; }
         .project .text span {
           color: #000; } }
   .project:hover .overlay, .project:focus .overlay {

@@ -28,7 +28,7 @@ $secondary: #a0f669;
 }
 
 html {
-	// overflow-x: hidden;
+	 overflow-x: hidden;
 }
 body {
 	font-family: $font-primary;
@@ -488,22 +488,7 @@ h1, h2, h3, h4, h5,
 						}
 					}
 				}
-				// .icon-video{
-				// 	position: absolute;
-				// 	top: 120px;
-				// 	right: 70px;
-				// 	content: '';
-				// 	width: 70px;
-				// 	height: 70px;
-				// 	background: $white;
-				// 	@include border-radius(50%);
-				// 	span{
-				// 		font-size: 20px;
-				// 		color: $black;
-				// 	}
-				// 	span.play{
-				// 	}
-				// }
+
 				.subheading{
 					color: $black;
 					font-weight: 600;
@@ -1055,7 +1040,7 @@ h1, h2, h3, h4, h5,
 			}
 			@include media-breakpoint-down(sm){
 				max-width: 100%;
-				opacity: 1;
+				opacity: 0;
 				span{
 					color: #000;
 				}
@@ -1074,7 +1059,7 @@ h1, h2, h3, h4, h5,
 		z-index: -1;
 		@include transition(.3s);
 		@include media-breakpoint-down(sm){
-			opacity: .2;
+			opacity: 1;
 		}
 	}
 	.text{
@@ -1096,7 +1081,7 @@ h1, h2, h3, h4, h5,
 			font-weight: 600;
 		}
 		@include media-breakpoint-down(sm){
-			opacity: 1;
+			opacity: 0;
 			span{
 				color: rgba(255,255,255,.8);
 			}
@@ -1104,7 +1089,10 @@ h1, h2, h3, h4, h5,
 	}
 	&:hover, &:focus{
 		.overlay{
-			opacity: .9;
+			opacity: 1;
+			@include media-breakpoint-down(sm){
+			opacity: 1;
+		}
 		}
 		.text{
 			opacity: 1;

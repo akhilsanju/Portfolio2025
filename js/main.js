@@ -135,7 +135,7 @@
 	// scroll
 	var scrollWindow = function() {
 		$(window).scroll(function(){
-			var $w = $(this),
+			var $w = $(this), 
 					st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
@@ -263,7 +263,6 @@
     mainClass: 'mfp-fade',
     removalDelay: 160,
     preloader: false,
-
     fixedContentPos: false
   });
 
@@ -273,3 +272,6 @@
 
 })(jQuery);
 
+$('.navbar-nav .nav-link').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
